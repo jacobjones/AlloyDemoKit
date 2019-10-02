@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<languages>
+  <language name="English" id="en">
+    <contenttypes>
+        <locationcontent>
+          <create>New Location</create>
+          <newitemdefaultname>New Location</newitemdefaultname>
+      </locationcontent>
+    </contenttypes>
+    <cms>
+      <searchprovider>
+        <location>
+          <name>Find locations</name>
+        </location>
+      </searchprovider>
+    </cms>
+  </language>
+</languages>

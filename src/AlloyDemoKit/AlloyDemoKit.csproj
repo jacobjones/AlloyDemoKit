@@ -574,6 +574,13 @@
     <Compile Include="Controllers\TagCloudBlockController.cs" />
     <Compile Include="Controllers\VideoFileController.cs" />
     <Compile Include="Controllers\WeatherBlockController.cs" />
+    <Compile Include="Locations\ScheduledJob\LocationDto.cs" />
+    <Compile Include="Locations\ScheduledJob\LocationImportScheduledJob.cs" />
+    <Compile Include="Locations\LocationSearchProvider.cs" />
+    <Compile Include="Locations\LocationTreeComponent.cs" />
+    <Compile Include="Locations\LocationContentRepositoryDescriptor.cs" />
+    <Compile Include="Locations\LocationRootInitialization.cs" />
+    <Compile Include="Locations\LocationContent.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -666,6 +673,7 @@
     <Compile Include="Models\ViewModels\VideoViewModel.cs" />
     <Compile Include="Models\ViewModels\WeatherBlockViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Resources\LanguageFiles\ExternalContent_EN.xml" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -695,6 +703,7 @@
     <Content Include="config\imageprocessor\cache.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="episerver-locations.json" />
     <None Include="Hunspellx64.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

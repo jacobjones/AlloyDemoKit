@@ -1,0 +1,124 @@
+[
+  {
+    "Region": "North America",
+    "LocationName": "Episerver Inc.",
+    "Description": "North America Headquarters",
+    "AddressLine1": "542A Amherst Street (Route 101A)",
+    "City": "Nashua",
+    "Subdivision": "NH",
+    "PostalCode": "03063",
+    "Country": "USA"
+  },
+  {
+    "Region": "North America",
+    "LocationName": "Corporate Office",
+    "AddressLine1": "20 Pacifica, Suite 430",
+    "City": "Irvine",
+    "Subdivision": "CA",
+    "PostalCode": "92618",
+    "Country": "USA"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver AB",
+    "Description": "EMEA Headquarters",
+    "AddressLine1": "Regeringsgatan 67, 5th floor",
+    "City": "Stockholm",
+    "PostalCode": "111 56",
+    "Country": "Sweden"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver United Kingdom",
+    "AddressLine1": "Cargo Works, Enterprise House",
+    "AddressLine2": "1-2 Hatfields",
+    "City": "London",
+    "PostalCode": "SE1 9PG",
+    "Country": "United Kingdom"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver Benelux",
+    "AddressLine1": "Leidseveer 2",
+    "City": "SB Utrecht",
+    "PostalCode": "3511",
+    "Country": "Netherlands"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver DACH",
+    "AddressLine1": "Wallstraße 16",
+    "City": "Berlin",
+    "PostalCode": "10179",
+    "Country": "Deutschland"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver Denmark",
+    "AddressLine1": "Njalsgade 23, 1st floor, to the left",
+    "City": "Copenhagen S",
+    "PostalCode": "2300",
+    "Country": "Denmark"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver Finland",
+    "AddressLine1": "Eteläesplanadi 2",
+    "City": "Helsinki",
+    "PostalCode": "00130",
+    "Country": "Finland"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver Spain",
+    "AddressLine1": "PO Box 28",
+    "City": "Begues",
+    "PostalCode": "08859",
+    "Country": "Spain"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver Norway",
+    "AddressLine1": "Karenslyst allé 2",
+    "City": "Oslo",
+    "PostalCode": "NO-0278",
+    "Country": "Norway"
+  },
+  {
+    "Region": "EMEA",
+    "LocationName": "Episerver South Africa",
+    "AddressLine1": "PO Box 55320",
+    "City": "Milnerton",
+    "PostalCode": "7435",
+    "Country": "South Africa"
+  },
+  {
+    "Region": "Asia",
+    "LocationName": "Episerver",
+    "Description": "Asia Pacific Headquarters",
+    "AddressLine1": "Suite 703, Level 7",
+    "AddressLine2": "No 1 Pacific Highway",
+    "City": "North Sydney",
+    "Subdivision": "NSW",
+    "PostalCode": "2060",
+    "Country": "Australia"
+  },
+  {
+    "Region": "Asia",
+    "LocationName": "Episerver Singapore",
+    "AddressLine1": "1 Fullerton Road #02-01",
+    "AddressLine2": "One Fullerton",
+    "City": "Singapore",
+    "PostalCode": "049213",
+    "Country": "Singapore"
+  },
+  {
+    "Region": "Asia",
+    "LocationName": "Episerver Vietnam",
+    "AddressLine1": "Song Hong Land Office Building",
+    "AddressLine2": "7th floor, 165 Thai Ha street, Dong Da district",
+    "City": "Hanoi",
+    "PostalCode": "159999",
+    "Country": "Vietnam"
+  }
+]
