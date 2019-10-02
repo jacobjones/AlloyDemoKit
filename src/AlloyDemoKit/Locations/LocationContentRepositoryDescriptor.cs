@@ -17,7 +17,7 @@ namespace AlloyDemoKit.Locations
             _root = contentRootService.Get("Locations");
         }
 
-        // Replace the following:
+        // TODO: Replace the following:
         public override string Key { get; }
         public override string Name { get; }
         public override IEnumerable<ContentReference> Roots { get; }

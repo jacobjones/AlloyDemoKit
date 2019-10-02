@@ -13,6 +13,8 @@ namespace AlloyDemoKit.Locations
         public void Initialize(InitializationEngine context)
         {
             var contentRootService = context.Locate.Advanced.GetInstance<ContentRootService>();
+
+            // TODO: Register the root
         }
 
         public void Uninitialize(InitializationEngine context)
