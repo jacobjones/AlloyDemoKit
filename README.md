@@ -5,13 +5,13 @@
 1. [Creating the content type](#1-creating-the-content-type)
 2. [Root Initialization](#2-root-initialization)
 3. [Creating the Content Repository Descriptor](#3-creating-the-content-repository-descriptor)
-4. [Creating the UI Component Definition](4-creating-the-ui-component-definition)
-5. [Building and Running](5-building-and-running)
+4. [Creating the UI Component Definition](#4-creating-the-ui-component-definition)
+5. [Building and Running](#5-building-and-running)
 
 ### Bonus Tasks
 
-6. [Importing some content](6-importing-some-content)
-7. [Wiring up search](7-wiring-up-search)
+6. [Importing some content](#6-importing-some-content)
+7. [Wiring up search](#7-wiring-up-search)
 
 The aim of this session is to show you one approach to persisting external data in the Episerver content model. As mentioned in the introduction, replicating content in Episerver comes with some inherent advantages, including performance (taking advantage of out-of-the-box catching etc.) and robustness.
 
@@ -170,9 +170,9 @@ For **task 5**:
 
 > ⚠️ If you don't see the locations tab, trying the following:
 > 1. Select **My Settings** under **epiadmin** in the top right of the top menu.<br>
-![My settings option](guide-images/my-settings.png "My settings option")
+![My settings option](guide-images/menu-my-settings.png "My settings option")
 > 2. Click the **Display options** tab
-> 3. Hit the **Reset views** button:<br>![Reset views](guide-images/reset-views-button.png "Reset views")
+> 3. Hit the **Reset views** button:<br>![Reset views](guide-images/button-reset-views.png "Reset views")
 
 ---
 
@@ -212,7 +212,7 @@ private ContentFolder GetFolderBySegment(ContentReference rootLink, string regio
 
 You probably noticed that the UI already shows a search bar for Locations:
 
-![Locations search](guide-images/locations-search.png "Locations search")
+![Locations search](guide-images/locations-search-bar.png "Locations search")
 
 Currently this doesn’t work, therefore the purpose of this task is to wire it so editors can utilize the search function.
 
@@ -278,6 +278,5 @@ public class LocationContentRepositoryDescriptor : ContentRepositoryDescriptorBa
     public override string SearchArea => "CMS/Locations";
 }
 ```
-
 
 </details>
