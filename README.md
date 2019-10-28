@@ -19,6 +19,8 @@ This guide will take you through the essential components required to get this w
 
 On top of this, this guide contains a few additional exercises you can attempt if you have the time, namely, enabling searching in the UI component (with Episerver Find) and showing how content can be imported and created using the content repository.
 
+Should it become necessary there is a feature branch with all tasks completed available for reference [here](https://github.com/jacobjones/AlloyDemoKit/tree/feature/ascend-complete).
+
 ## 1. Creating the content type
 
 Not all content in Episerver has to be persisted as a page or block type. In fact, often when working with external content, these types are not a good fit for the data you need to store. Take for example storing a location; this is not necessarily well represented by a page or block, and in fact is likely better characterized by a more generic content type. This allows editors to interact with it as if it was any other content (dragging-and-dropping, previewing, using display options etc.) whilst allowing more control and configurability in code. 
