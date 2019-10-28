@@ -41,7 +41,7 @@ For **task 1**:
 3. Add a `ContentTypeAttribute`, set a DisplayName and assign it a unique GUID.
 
 <details>
-<summary>Just let see the code!</summary>
+<summary>Just let me see the code!</summary>
 
 ```c#
 [ContentType(
@@ -68,7 +68,7 @@ For **task 2**:
     * Set the parent to the root page (available via `EPiServer.Core.ContentReference.RootPage`)
 
 <details>
-<summary>Just let see the code!</summary>
+<summary>Just let me see the code!</summary>
 
 ```c#
 public void Initialize(InitializationEngine context)
@@ -105,7 +105,7 @@ For **task 3**:
 8. Add a `MainNavigationTypes` override (this should look exactly `ContainedTypes` one). This should only be the `ContentFolder` type.
 
 <details>
-<summary>Just let see the code!</summary>
+<summary>Just let me see the code!</summary>
 
 ```c#
 [ServiceConfiguration(typeof(IContentRepositoryDescriptor))]
@@ -195,7 +195,7 @@ For **task 6**:
 > 💡 This only provides a **very** rough example of an implementation and by no means conforms with best practices! In a real-world example you like store the external ID as a property and use Episerver Find to look this up.
 
 <details>
-<summary>Just let see the code!</summary>
+<summary>Just let me see the code!</summary>
 
 All the code you needed was already above! 😉
 
@@ -241,7 +241,7 @@ For **task 7**:
 6. After runnning the indexing job in the admin section of the CMS you should now be able to search for locations!
 
 <details>
-<summary>Just let see the code!</summary>
+<summary>Just let me see the code!</summary>
 
 The search provider:
 
