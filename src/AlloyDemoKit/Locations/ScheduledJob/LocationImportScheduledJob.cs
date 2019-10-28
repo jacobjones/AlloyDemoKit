@@ -46,8 +46,7 @@ namespace AlloyDemoKit.Locations.ScheduledJob
 
         private ContentFolder GetFolderBySegment(ContentReference rootLink, string regionName)
         {
-            // TODO: Implement the method
-            throw new NotImplementedException();
+            return _contentRepository.GetBySegment(rootLink, _urlSegmentGenerator.Create(regionName), ContentLanguage.Instance.FinalFallbackCulture) as ContentFolder;
         }
 
         public override string Execute()
@@ -90,36 +89,35 @@ namespace AlloyDemoKit.Locations.ScheduledJob
                     _folderCount++;
                 }
 
-                // TODO: The following needs to be uncommented:
-                //var locationNames = _contentRepository.GetChildren<LocationContent>(folder.ContentLink)
-                //    .Select(x => x.LocationName).ToList();
+                var locationNames = _contentRepository.GetChildren<LocationContent>(folder.ContentLink)
+                    .Select(x => x.LocationName).ToList();
 
-                //foreach (var locationDto in regionLocation)
-                //{
-                //    if (_isStopped)
-                //    {
-                //        return $"Stopped: {StatusMessage}";
-                //    }
+                foreach (var locationDto in regionLocation)
+                {
+                    if (_isStopped)
+                    {
+                        return $"Stopped: {StatusMessage}";
+                    }
 
-                //    if (locationNames.Contains(locationDto.LocationName))
-                //    {
-                //        continue;
-                //    }
+                    if (locationNames.Contains(locationDto.LocationName))
+                    {
+                        continue;
+                    }
 
-                //    var location = _contentRepository.GetDefault<LocationContent>(folder.ContentLink);
-                //    location.Name = locationDto.LocationName;
-                //    location.LocationName = locationDto.LocationName;
-                //    location.Description = locationDto.Description;
-                //    location.AddressLine1 = locationDto.AddressLine1;
-                //    location.AddressLine2 = locationDto.AddressLine2;
-                //    location.City = locationDto.City;
-                //    location.Subdivision = locationDto.Subdivision;
-                //    location.PostalCode = locationDto.PostalCode;
-                //    location.Country = locationDto.Country;
+                    var location = _contentRepository.GetDefault<LocationContent>(folder.ContentLink);
+                    location.Name = locationDto.LocationName;
+                    location.LocationName = locationDto.LocationName;
+                    location.Description = locationDto.Description;
+                    location.AddressLine1 = locationDto.AddressLine1;
+                    location.AddressLine2 = locationDto.AddressLine2;
+                    location.City = locationDto.City;
+                    location.Subdivision = locationDto.Subdivision;
+                    location.PostalCode = locationDto.PostalCode;
+                    location.Country = locationDto.Country;
 
-                //    _contentRepository.Save(location, SaveAction.Publish, AccessLevel.NoAccess);
-                //    _locationCount++;
-                //}
+                    _contentRepository.Save(location, SaveAction.Publish, AccessLevel.NoAccess);
+                    _locationCount++;
+                }
             }
 
 

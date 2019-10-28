@@ -8,14 +8,23 @@ using EPiServer.Web;
 
 namespace AlloyDemoKit.Locations
 {
-    //[SearchProvider]
-    //public class LocationSearchProvider : EnterpriseContentSearchProviderBase<LocationContent, ContentType>
-    //{
-    //    public LocationSearchProvider(LocalizationService localizationService,
-    //        ISiteDefinitionResolver siteDefinitionResolver, IContentTypeRepository blockTypeRepository,
-    //        UIDescriptorRegistry uiDescriptorRegistry) : base(localizationService, siteDefinitionResolver,
-    //        blockTypeRepository, uiDescriptorRegistry)
-    //    {
-    //    }
-    //}
+    [SearchProvider]
+    public class LocationSearchProvider : EnterpriseContentSearchProviderBase<LocationContent, ContentType>
+    {
+        public LocationSearchProvider(LocalizationService localizationService,
+            ISiteDefinitionResolver siteDefinitionResolver, IContentTypeRepository blockTypeRepository,
+            UIDescriptorRegistry uiDescriptorRegistry) : base(localizationService, siteDefinitionResolver,
+            blockTypeRepository, uiDescriptorRegistry)
+        {
+        }
+
+        protected override string IconCssClass(LocationContent contentData)
+        {
+            return FindContentSearchProviderConstants.BlockIconCssClass;
+        }
+
+        public override string Category => "Locations";
+
+        public override string Area => "CMS/Locations";
+    }
 }

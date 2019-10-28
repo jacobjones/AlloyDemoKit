@@ -14,7 +14,8 @@ namespace AlloyDemoKit.Locations
         {
             var contentRootService = context.Locate.Advanced.GetInstance<ContentRootService>();
 
-            // TODO: Register the root
+            contentRootService.Register<ContentFolder>("Locations", new Guid("3A596E25-4B13-41D6-9958-C21D38B71A09"),
+                ContentReference.RootPage);
         }
 
         public void Uninitialize(InitializationEngine context)

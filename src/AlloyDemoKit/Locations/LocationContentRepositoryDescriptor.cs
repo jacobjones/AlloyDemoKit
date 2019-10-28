@@ -17,10 +17,15 @@ namespace AlloyDemoKit.Locations
             _root = contentRootService.Get("Locations");
         }
 
-        // TODO: Replace the following:
-        public override string Key { get; }
-        public override string Name { get; }
-        public override IEnumerable<ContentReference> Roots { get; }
-        public override IEnumerable<Type> ContainedTypes { get; }
+        public override string Key => "locations";
+        public override string Name => "Locations";
+        public override IEnumerable<ContentReference> Roots => new[] { _root };
+        public override IEnumerable<Type> ContainedTypes => new[] { typeof(LocationContent), typeof(ContentFolder) };
+
+        public override IEnumerable<Type> CreatableTypes => new[] { typeof(LocationContent), typeof(ContentFolder) };
+        public override IEnumerable<Type> LinkableTypes => new[] { typeof(LocationContent), };
+        public override IEnumerable<Type> MainNavigationTypes => new[] { typeof(ContentFolder), };
+
+        public override string SearchArea => "CMS/Locations";
     }
 }

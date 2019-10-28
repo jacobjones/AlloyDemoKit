@@ -5,7 +5,10 @@ using EPiServer.Web;
 
 namespace AlloyDemoKit.Locations
 {
-    public class LocationContent
+    [ContentType(
+        DisplayName = "Location",
+        GUID = "870FC2A1-CF1F-4953-93AD-973A9C637F76")]
+    public class LocationContent : StandardContentBase
     {
         [CultureSpecific]
         [Required]
